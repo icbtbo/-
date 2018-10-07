@@ -1,0 +1,78 @@
+.right {
+	position: relative;
+	width: 100%;
+}
+ 
+.divMain {
+	height: 700px;
+	background-color: #666666;
+	border-radius: 5px;
+	box-shadow: 10px 10px 20px 10px;
+	display: inline-block;
+}
+ 
+.button {
+	display: inline-block;
+	border-radius: 5px;
+	background-color: #f4511e;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	width: 100px;
+	height: 40px;
+	transition: 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+ 
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+ 
+.button span:after {
+	content: '»';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+ 
+.button:hover span {
+	padding-right: 25px;
+}
+ 
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+ 
+.button:active {
+	background-color: #4CAF50;
+	border: 2px solid #e7e7e7;
+	transition: 0.1s;
+}
+ 
+.buttonDiv {
+	position: absolute;
+	margin-left: 45%;
+	margin-top: 600px
+}
+#buttonDiv2 {
+	position: absolute;
+	z-index: 9999;
+	margin-left: 45%;
+	margin-top: 600px
+}
+ 
+.newDiv{
+	padding-right: 1px;
+	position: absolute;
+	border: solid 1px #000000;
+	background-color: gainsboro;
+	border-radius: 5px;
+	bottom: 0px;
+}
